@@ -76,7 +76,7 @@ header::after {
 }
 
 .login i {
-  color: #ee1515;
+  color: #15caee;
   margin-right: 8px;
 }
 
@@ -99,7 +99,7 @@ header::after {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border: 1px solid #ee1515;
+  border: 1px solid #15caee;
   border-radius: 4px;
   line-height: 40px;
   text-align: center;
@@ -109,7 +109,7 @@ header::after {
 
 .social a:hover {
   color: #fff;
-  background-color: #ee1515;
+  background-color: #15caee;
 }
 
 .navbar-brand img {
@@ -134,7 +134,7 @@ header::after {
 }
 
 .navbar-collapse .nav-link:hover {
-  color: #ee1515;
+  color: #15caee;
 }
 
 .cart,
@@ -147,7 +147,7 @@ header::after {
 .cart:hover,
 .login-icon:hover,
 .search-icon:hover {
-  color: #ee1515;
+  color: #15caee;
 }
 
 .cart {
@@ -157,7 +157,7 @@ header::after {
 form input.btn-primary:hover,
 form button.btn-primary:hover {
   background-color: #fff;
-  color: #ee1515;
+  color: #15caee;
 }
 
 /*-----------------------------------
@@ -182,7 +182,7 @@ form button.btn-primary:hover {
 }
 
 .hero .slide-content span {
-  color: #ee1515;
+  color: #15caee;
 }
 
 .hero .slide-content h1 {
@@ -285,7 +285,7 @@ form button.btn-primary:hover {
 .cta-content {
   padding: 30px 0 90px;
   color: #fff;
-  background-color: #ee1515;
+  background-color: #15caee;
   position: relative;
   z-index: 1;
 }
@@ -329,7 +329,7 @@ form button.btn-primary:hover {
 }
 
 .title .title-primary {
-  color: #ee1515;
+  color: #15caee;
 }
 
 .services {
@@ -365,7 +365,7 @@ form button.btn-primary:hover {
 
 .featured .media i {
   font-size: 24px;
-  color: #ee1515;
+  color: #15caee;
 }
 
 .featured .media h5 {
@@ -469,7 +469,7 @@ form button.btn-primary:hover {
 
 .post-content .post-btn:hover {
   color: #fff;
-  background-color: #ee1515;
+  background-color: #15caee;
 }
 
 /*-----------------------------------
@@ -655,7 +655,7 @@ form button.btn-primary:hover {
     1 - Testimonials
 ------------------------------------*/
 .testimonial-and-clients {
-  background: url(../images/test-clients-bg.png) center center/cover no-repeat #15caee/*ee1515*/;
+  background: url(../images/test-clients-bg.png) center center/cover no-repeat #15caee/*15caee*/;
 }
 
 .testimonials {
@@ -848,7 +848,7 @@ span {
 .tags-widget a:hover {
   text-decoration: none;
   color: #26264b;
-  background-color: #ee1515;
+  background-color: #15caee;
 }
 
 .subscribe-widget form {
@@ -871,7 +871,7 @@ span {
 }
 
 .subscribe-widget button {
-  background: #ee1515;
+  background: #15caee;
   border: none;
   padding: 9px 14px;
   border-top-right-radius: 10px;
@@ -908,7 +908,7 @@ span {
 }
 
 .subscribe-widget .social-nav a:hover {
-  background-color: #ee1515;
+  background-color: #15caee;
 }
 
 /*-----------------------------------
@@ -916,7 +916,7 @@ span {
 ------------------------------------*/
 .foot-note {
   padding: 35px 0;
-  background-color: #ee1515;
+  background-color: #15caee;
   color: #26264b;
 }
 
