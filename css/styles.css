@@ -10125,6 +10125,17 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
+header.baby_masthead {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/Black_Box.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
