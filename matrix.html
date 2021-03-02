@@ -65,7 +65,7 @@
                         </div> -->
                     <p class="item-intro text-muted"  align="justify">Solder the LEDs together in layers, the cathodes should all be connected in each layer, the anodes connect in columns. This way, we can turn on each LED individually by setting a column (+ pin) to high and the layer of the desired LED (- pin) to low.</p>
 
-                    <p class="item-intro text-muted"  align="justify">Gotta be careful when soldering, it turns out that LEDs can be destroyed by the heat if you take to long to make a connection.</p>
+                    <p class="item-intro text-muted"  align="justify">Gotta be careful when soldering, it turns out that LEDs can be destroyed by the heat if you take too long to make a connection.</p>
                     <img class="img-fluid d-block mx-auto" src="assets/img/leds/matrix_layer2_square.jpg" alt="" />
                     <p class="item-intro text-muted"  align="justify">One of the problems with connecting the LEDs up like this is that we can't turn on two LEDs in two different layers without also turning on the LED in the corresponding column and layer. To get around this, anytime we turn on multiple LEDs we need to turn it them and off really fast, this way, we can have any group of LEDs appear to be on while the rest are off.</p>
                     
@@ -140,7 +140,35 @@
                         Your browser does not support the video tag.
                         </video>
                         <p class="item-intro text-muted"  align="justify">Lots of testing. Testing all the time. LEDs replaced so far: ~3.</p>
-
+                        <pre>
+                            <code align=left>
+void square2Row1(int timeDelay, int a, int b, int c, int d, int e) {
+    digitalWrite(40, LOW);   
+    
+    if (a) {
+        digitalWrite(2, HIGH);
+    }
+    if (b) {
+        digitalWrite(3, HIGH);
+    }
+    if (c) {
+        digitalWrite(4, HIGH);
+    }
+    if (d) {
+        digitalWrite(5, HIGH);
+    }
+    if (e) {
+        digitalWrite(6, HIGH);
+    }
+    delay(timeDelay);
+    for (int i = 2; i < 7; i++) {
+        digitalWrite(i, LOW);
+    }
+    digitalWrite(40, HIGH);
+    }                        
+                            </code>
+                        </pre>
+                                                  
                         
                         <video width="400" height="800" autoplay muted loop="true" >
                             <source src="assets/img/leds/bouncy.mp4" type="video/mp4">
@@ -149,21 +177,32 @@
                         <p class="item-intro text-muted"  align="justify">Bouncy. Also problem.</p>
 
 
-                        <video width="400" height="800" autoplay muted loop="true" >
-                            <source src="assets/img/leds/pattern_matrix.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                        </video>
-                        <p class="item-intro text-muted"  align="justify">When I started getting some patterns going I realised that I had included 0 resistors in this entire project (major panic). And yet nothing was burning? Well. Will come back to this.</p>
+                        
 
                         <!-- <video width="400" height="800" autoplay muted loop="true" >
                             <source src="assets/img/leds/testing_cube.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                         </video> -->
-                        <video width="400" autoplay muted loop="true" >
-                            <source src="assets/img/leds/long_pattern.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                        </video>
-                        <p class="item-intro text-muted"  align="justify">Longer pattern.</p>
+
+                        <div class="row">
+                            <div class="column2">
+                                <video width="400" autoplay muted loop="true" >
+                                    <source src="assets/img/leds/pattern_matrix.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                                </video>                            
+                            </div>
+                            <div class="column2">
+                                <video width="400" autoplay muted loop="true" >
+                                    <source src="assets/img/leds/long_pattern.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                                </video>                            
+                            </div>
+                            
+                        </div>
+
+                        <p class="item-intro text-muted"  align="justify">When I started getting some patterns going I realised that I had included 0 resistors in this entire project (major panic). And yet nothing was burning? Well. Will come back to this.</p>
+
+                        <!-- <p class="item-intro text-muted"  align="justify">Longer pattern.</p> -->
 
                         <video width="400" height="800" autoplay muted loop="true" >
                             <source src="assets/img/leds/testing_paddle.mp4" type="video/mp4">
