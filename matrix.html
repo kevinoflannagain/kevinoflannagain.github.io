@@ -136,14 +136,16 @@
 
                         <p class="item-intro text-muted"  align="justify">Oh god I have to clean up the code.</p>
 
-                        <video width="400" height="800" autoplay muted loop="true" >
+                        <video width="400" autoplay muted loop="true" >
                             <source src="assets/img/leds/testing_5.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                         </video>
                         <p class="item-intro text-muted"  align="justify">Lots of testing. Testing all the time. LEDs replaced so far: ~4.</p>
                     </div>
+                    <figure>
                         <pre>
-                            <code align=left>
+                            <code align=left >
+                                <code align=left spellcheck="false">
                         void square2Row1(int timeDelay, int a, int b, int c, int d, int e) {
                             digitalWrite(40, LOW);  
                             if (a) {digitalWrite(2, HIGH);
@@ -164,12 +166,102 @@
                             }                        
                             </code>
                         </pre>
+                    </figure>
                         <p class="item-intro text-muted"  align="justify">This was the basic unit of code I started with. I was in two minds about making a function that could do anything or just making a basic function and reusing it where I could and using other more specific functions to do more complicated things.</p>
                         <p class="item-intro text-muted"  align="justify">The first line sets the negative pins of the specific 5x5 square to LOW, then we go through each LED in our specific row and turn on the ones we want. The timeDelay sets how long the LEDs stay on for. Yes I made 20 functions that look exactly like this. I was young and foolish okay.</p>
+                        <p class="item-intro text-muted"  align="justify">The nice thing about having repetitive functions like this is that I can visualise exactly what its going to look like., and can show pretty much whatever I want.</p>
 
-                                                  
+                        <pre>
+                            <code spellcheck="false">
+                            time_now = millis();
+                            while (millis() < time_now + period) {
+                        
+                            square2Row4(timeDelay, 0, 1, 1, 1, 1);
+                            square2Row3(timeDelay, 0, 1, 1, 1, 1);
+                            square2Row2(timeDelay, 0, 1, 1, 1, 1);
+                            square2Row1(timeDelay, 0, 1, 1, 1, 1);
+                        
+                            square3Row4(timeDelay, 1, 1, 1, 1, 0);
+                            square3Row3(timeDelay, 1, 1, 1, 1, 0);
+                            square3Row2(timeDelay, 1, 1, 1, 1, 0);
+                            square3Row1(timeDelay, 1, 1, 1, 1, 0);
+                        
+                            square0Row2(timeDelay, 0, 1, 1, 1, 1);
+                            square0Row3(timeDelay, 0, 1, 1, 1, 1);
+                            square0Row4(timeDelay, 0, 1, 1, 1, 1);
+                            square0Row5(timeDelay, 0, 1, 1, 1, 1);
+                        
+                            square1Row2(timeDelay, 1, 1, 1, 1, 0);
+                            square1Row3(timeDelay, 1, 1, 1, 1, 0);
+                            square1Row4(timeDelay, 1, 1, 1, 1, 0);
+                            square1Row5(timeDelay, 1, 1, 1, 1, 0);
+                            }
+                            </code>
+                        </pre>
+                        <pre>
+                            <code spellcheck="false">
+                        void rows(int timeDelay, int rowNo, int arr[10]) {           
+                            int a = arr[0];
+                            int b = arr[1];
+                            int c = arr[2];
+                            int d = arr[3];
+                            int e = arr[4];
+                            int f = arr[5];
+                            int g = arr[6];
+                            int h = arr[7];
+                            int i = arr[8];
+                            int j = arr[9];
+
+                            switch (rowNo)
+                            {
+                            case 0:
+                                square0Row1(timeDelay, a, b, c, d, e);
+                                square1Row1(timeDelay, f, g, h, i, j);
+                                break;
+                            case 1:
+                                square0Row2(timeDelay, a, b, c, d, e);
+                                square1Row2(timeDelay, f, g, h, i, j);
+                                break;
+                            case 2:
+                                square0Row3(timeDelay, a, b, c, d, e);
+                                square1Row3(timeDelay, f, g, h, i, j);
+                                break;
+                            case 3:
+                                square0Row4(timeDelay, a, b, c, d, e);
+                                square1Row4(timeDelay, f, g, h, i, j);
+                                break;
+                            case 4:
+                                square0Row5(timeDelay, a, b, c, d, e);
+                                square1Row5(timeDelay, f, g, h, i, j);
+                                break;
+                            case 5:
+                                square2Row1(timeDelay, a, b, c, d, e);
+                                square3Row1(timeDelay, f, g, h, i, j);
+                                break;
+                            case 6:
+                                square2Row2(timeDelay, a, b, c, d, e);
+                                square3Row2(timeDelay, f, g, h, i, j);
+                                break;
+                            case 7:
+                                square2Row3(timeDelay, a, b, c, d, e);
+                                square3Row3(timeDelay, f, g, h, i, j);
+                                break;
+                            case 8:
+                                square2Row4(timeDelay, a, b, c, d, e);
+                                square3Row4(timeDelay, f, g, h, i, j);
+                                break;
+                            case 9:
+                                square2Row5(timeDelay, a, b, c, d, e);
+                                square3Row5(timeDelay, f, g, h, i, j);
+                                break;
+                            }
+                        }
+                            </code>
+                        </pre>
+                        <p class="item-intro text-muted"  align="justify">Now if I call rows() in a loop i can start getting things like the video below.</p>
+
                     <div align=center>
-                        <video width="400" height="800" autoplay muted loop="true" >
+                        <video width="400"  autoplay muted loop="true" >
                             <source src="assets/img/leds/bouncy.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                         </video>
