@@ -115,6 +115,7 @@
                               <img src="assets/img/leds/back_some_pins.jpg" alt="" style="width:100%">
                             </div>
                         </div>
+                        <p class="item-intro text-muted"  align="justify">Soldering on these stripboard type things makes you feel like a solder god. It just goes exactly where you want it to an nowhere else.</p>
 
                         
                         <div class="row">       
@@ -139,37 +140,35 @@
                             <source src="assets/img/leds/testing_5.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                         </video>
-                        <p class="item-intro text-muted"  align="justify">Lots of testing. Testing all the time. LEDs replaced so far: ~3.</p>
+                        <p class="item-intro text-muted"  align="justify">Lots of testing. Testing all the time. LEDs replaced so far: ~4.</p>
+                    </div>
                         <pre>
                             <code align=left>
-void square2Row1(int timeDelay, int a, int b, int c, int d, int e) {
-    digitalWrite(40, LOW);   
-    
-    if (a) {
-        digitalWrite(2, HIGH);
-    }
-    if (b) {
-        digitalWrite(3, HIGH);
-    }
-    if (c) {
-        digitalWrite(4, HIGH);
-    }
-    if (d) {
-        digitalWrite(5, HIGH);
-    }
-    if (e) {
-        digitalWrite(6, HIGH);
-    }
-    delay(timeDelay);
-    for (int i = 2; i < 7; i++) {
-        digitalWrite(i, LOW);
-    }
-    digitalWrite(40, HIGH);
-    }                        
+                        void square2Row1(int timeDelay, int a, int b, int c, int d, int e) {
+                            digitalWrite(40, LOW);  
+                            if (a) {digitalWrite(2, HIGH);
+                            }
+                            if (b) {digitalWrite(3, HIGH);
+                            }
+                            if (c) {digitalWrite(4, HIGH);
+                            }
+                            if (d) {digitalWrite(5, HIGH);
+                            }
+                            if (e) {digitalWrite(6, HIGH);
+                            }
+                            delay(timeDelay);
+                            for (int i = 2; i < 7; i++) {
+                                digitalWrite(i, LOW);
+                            }
+                            digitalWrite(40, HIGH);
+                            }                        
                             </code>
                         </pre>
+                        <p class="item-intro text-muted"  align="justify">This was the basic unit of code I started with. I was in two minds about making a function that could do anything or just making a basic function and reusing it where I could and using other more specific functions to do more complicated things.</p>
+                        <p class="item-intro text-muted"  align="justify">The first line sets the negative pins of the specific 5x5 square to LOW, then we go through each LED in our specific row and turn on the ones we want. The timeDelay sets how long the LEDs stay on for. Yes I made 20 functions that look exactly like this. I was young and foolish okay.</p>
+
                                                   
-                        
+                    <div align=center>
                         <video width="400" height="800" autoplay muted loop="true" >
                             <source src="assets/img/leds/bouncy.mp4" type="video/mp4">
                         Your browser does not support the video tag.
