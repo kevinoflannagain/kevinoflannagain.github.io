@@ -10151,6 +10151,8 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  max-width: 100%;
+
 }
 header.baby_masthead {
   padding-top: 3rem;
