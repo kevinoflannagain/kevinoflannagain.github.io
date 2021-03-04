@@ -10301,13 +10301,13 @@ header.masthead .masthead-heading {
 
   .portfolio-modal .modal-dialog {
     margin: 1rem;
-    max-width: 80vw;
+    max-width: 70vw;
   }
   .portfolio-modal .modal-content {
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
-    max-width: 80vw;
+    max-width: 70vw;
   }
 }
 
