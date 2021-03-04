@@ -9768,7 +9768,13 @@ button.bg-dark:focus {
 .text-uppercase {
   text-transform: uppercase !important;
 }
-
+@media (max-width: 800px) {
+  .text-uppercase {
+    text-transform: uppercase !important;
+    font-size: 1.25rem;
+    max-width: 60vw
+  }
+}
 .text-capitalize {
   text-transform: capitalize !important;
 }
@@ -10256,6 +10262,7 @@ header.masthead .masthead-heading {
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
+  max-width: 60vw;
 }
 .portfolio-modal .modal-content h2 {
   font-size: 3rem;
@@ -10286,6 +10293,20 @@ header.masthead .masthead-heading {
 }
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
+}
+/*---------------------------------------^ project previews ^-------------------------------------------*/
+@media (min-width: 992px) {
+
+  .portfolio-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 80vw;
+  }
+  .portfolio-modal .modal-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    max-width: 80vw;
+  }
 }
 
 .timeline {
