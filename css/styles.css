@@ -10264,7 +10264,7 @@ header.masthead .masthead-heading {
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
-  max-width: 60vw;
+  max-width: 50vw;
 }
 .portfolio-modal .modal-content h2 {
   font-size: 3rem;
@@ -10301,13 +10301,13 @@ header.masthead .masthead-heading {
 
   .portfolio-modal .modal-dialog {
     margin: 1rem;
-    max-width: 70vw;
+    max-width: 80vw;
   }
   .portfolio-modal .modal-content {
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
-    max-width: 70vw;
+    max-width: 80vw;
   }
 }
 
