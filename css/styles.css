@@ -9767,12 +9767,14 @@ button.bg-dark:focus {
 
 .text-uppercase {
   text-transform: uppercase !important;
+  text-align: center;
 }
 @media (max-width: 800px) {
   .text-uppercase {
     text-transform: uppercase !important;
     font-size: 1.25rem;
-    max-width: 70vw
+    max-width: 70vw;
+    text-align: center;
   }
 }
 .text-capitalize {
