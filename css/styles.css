@@ -10250,11 +10250,11 @@ header.masthead .masthead-heading {
 
 .portfolio-modal .modal-dialog {
   margin: 1rem;
-  max-width: 100vw;
+  max-width: 60vw;
 }
 .portfolio-modal .modal-content {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 .portfolio-modal .modal-content h2 {
