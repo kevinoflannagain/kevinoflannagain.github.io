@@ -197,90 +197,90 @@
                     <figure>
                         <pre>
                             <code spellcheck="false">
-                            time_now = millis();
-                            while (millis() < time_now + period) {
-                        
-                            square2Row4(timeDelay, 0, 1, 1, 1, 1);
-                            square2Row3(timeDelay, 0, 1, 1, 1, 1);
-                            square2Row2(timeDelay, 0, 1, 1, 1, 1);
-                            square2Row1(timeDelay, 0, 1, 1, 1, 1);
-                        
-                            square3Row4(timeDelay, 1, 1, 1, 1, 0);
-                            square3Row3(timeDelay, 1, 1, 1, 1, 0);
-                            square3Row2(timeDelay, 1, 1, 1, 1, 0);
-                            square3Row1(timeDelay, 1, 1, 1, 1, 0);
-                        
-                            square0Row2(timeDelay, 0, 1, 1, 1, 1);
-                            square0Row3(timeDelay, 0, 1, 1, 1, 1);
-                            square0Row4(timeDelay, 0, 1, 1, 1, 1);
-                            square0Row5(timeDelay, 0, 1, 1, 1, 1);
-                        
-                            square1Row2(timeDelay, 1, 1, 1, 1, 0);
-                            square1Row3(timeDelay, 1, 1, 1, 1, 0);
-                            square1Row4(timeDelay, 1, 1, 1, 1, 0);
-                            square1Row5(timeDelay, 1, 1, 1, 1, 0);
-                            }
+                        time_now = millis();
+                        while (millis() < time_now + period) {
+                    
+                        square2Row4(timeDelay, 0, 1, 1, 1, 1);
+                        square2Row3(timeDelay, 0, 1, 1, 1, 1);
+                        square2Row2(timeDelay, 0, 1, 1, 1, 1);
+                        square2Row1(timeDelay, 0, 1, 1, 1, 1);
+                    
+                        square3Row4(timeDelay, 1, 1, 1, 1, 0);
+                        square3Row3(timeDelay, 1, 1, 1, 1, 0);
+                        square3Row2(timeDelay, 1, 1, 1, 1, 0);
+                        square3Row1(timeDelay, 1, 1, 1, 1, 0);
+                    
+                        square0Row2(timeDelay, 0, 1, 1, 1, 1);
+                        square0Row3(timeDelay, 0, 1, 1, 1, 1);
+                        square0Row4(timeDelay, 0, 1, 1, 1, 1);
+                        square0Row5(timeDelay, 0, 1, 1, 1, 1);
+                    
+                        square1Row2(timeDelay, 1, 1, 1, 1, 0);
+                        square1Row3(timeDelay, 1, 1, 1, 1, 0);
+                        square1Row4(timeDelay, 1, 1, 1, 1, 0);
+                        square1Row5(timeDelay, 1, 1, 1, 1, 0);
+                        }
                             </code>
                         </pre>
                     </figure>
                         <pre>
                             <code spellcheck="false">
-                        void rows(int timeDelay, int rowNo, int arr[10]) {           
-                            int a = arr[0];
-                            int b = arr[1];
-                            int c = arr[2];
-                            int d = arr[3];
-                            int e = arr[4];
-                            int f = arr[5];
-                            int g = arr[6];
-                            int h = arr[7];
-                            int i = arr[8];
-                            int j = arr[9];
+                    void rows(int timeDelay, int rowNo, int arr[10]) {           
+                        int a = arr[0];
+                        int b = arr[1];
+                        int c = arr[2];
+                        int d = arr[3];
+                        int e = arr[4];
+                        int f = arr[5];
+                        int g = arr[6];
+                        int h = arr[7];
+                        int i = arr[8];
+                        int j = arr[9];
 
-                            switch (rowNo)
-                            {
-                            case 0:
-                                square0Row1(timeDelay, a, b, c, d, e);
-                                square1Row1(timeDelay, f, g, h, i, j);
-                                break;
-                            case 1:
-                                square0Row2(timeDelay, a, b, c, d, e);
-                                square1Row2(timeDelay, f, g, h, i, j);
-                                break;
-                            case 2:
-                                square0Row3(timeDelay, a, b, c, d, e);
-                                square1Row3(timeDelay, f, g, h, i, j);
-                                break;
-                            case 3:
-                                square0Row4(timeDelay, a, b, c, d, e);
-                                square1Row4(timeDelay, f, g, h, i, j);
-                                break;
-                            case 4:
-                                square0Row5(timeDelay, a, b, c, d, e);
-                                square1Row5(timeDelay, f, g, h, i, j);
-                                break;
-                            case 5:
-                                square2Row1(timeDelay, a, b, c, d, e);
-                                square3Row1(timeDelay, f, g, h, i, j);
-                                break;
-                            case 6:
-                                square2Row2(timeDelay, a, b, c, d, e);
-                                square3Row2(timeDelay, f, g, h, i, j);
-                                break;
-                            case 7:
-                                square2Row3(timeDelay, a, b, c, d, e);
-                                square3Row3(timeDelay, f, g, h, i, j);
-                                break;
-                            case 8:
-                                square2Row4(timeDelay, a, b, c, d, e);
-                                square3Row4(timeDelay, f, g, h, i, j);
-                                break;
-                            case 9:
-                                square2Row5(timeDelay, a, b, c, d, e);
-                                square3Row5(timeDelay, f, g, h, i, j);
-                                break;
-                            }
+                        switch (rowNo)
+                        {
+                        case 0:
+                            square0Row1(timeDelay, a, b, c, d, e);
+                            square1Row1(timeDelay, f, g, h, i, j);
+                            break;
+                        case 1:
+                            square0Row2(timeDelay, a, b, c, d, e);
+                            square1Row2(timeDelay, f, g, h, i, j);
+                            break;
+                        case 2:
+                            square0Row3(timeDelay, a, b, c, d, e);
+                            square1Row3(timeDelay, f, g, h, i, j);
+                            break;
+                        case 3:
+                            square0Row4(timeDelay, a, b, c, d, e);
+                            square1Row4(timeDelay, f, g, h, i, j);
+                            break;
+                        case 4:
+                            square0Row5(timeDelay, a, b, c, d, e);
+                            square1Row5(timeDelay, f, g, h, i, j);
+                            break;
+                        case 5:
+                            square2Row1(timeDelay, a, b, c, d, e);
+                            square3Row1(timeDelay, f, g, h, i, j);
+                            break;
+                        case 6:
+                            square2Row2(timeDelay, a, b, c, d, e);
+                            square3Row2(timeDelay, f, g, h, i, j);
+                            break;
+                        case 7:
+                            square2Row3(timeDelay, a, b, c, d, e);
+                            square3Row3(timeDelay, f, g, h, i, j);
+                            break;
+                        case 8:
+                            square2Row4(timeDelay, a, b, c, d, e);
+                            square3Row4(timeDelay, f, g, h, i, j);
+                            break;
+                        case 9:
+                            square2Row5(timeDelay, a, b, c, d, e);
+                            square3Row5(timeDelay, f, g, h, i, j);
+                            break;
                         }
+                    }
                             </code>
                         </pre>
                         <p class="item-intro text-muted"  align="justify">Now if I call rows() in a loop i can start getting things like the video below.</p>
